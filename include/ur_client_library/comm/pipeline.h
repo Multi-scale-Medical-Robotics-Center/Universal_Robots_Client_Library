@@ -218,6 +218,8 @@ public:
   virtual void setupProducer(const size_t max_num_tries = 0,
                              const std::chrono::milliseconds reconnection_time = std::chrono::seconds(10))
   {
+    (void) max_num_tries;
+    (void) reconnection_time;
   }
   /*!
    * \brief Fully tears down the producer - by default no difference to stopping it.
@@ -258,12 +260,14 @@ public:
    */
   virtual void started(std::string name)
   {
+    (void) name;
   }
   /*!
    * \brief Stop notification.
    */
   virtual void stopped(std::string name)
   {
+    (void) name;
   }
 };
 

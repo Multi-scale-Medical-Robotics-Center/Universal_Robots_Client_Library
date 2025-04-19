@@ -64,6 +64,7 @@ public:
    */
   virtual bool consume(RobotMessage& msg) override
   {
+    (void) msg;
     return true;
   }
 
@@ -76,6 +77,7 @@ public:
    */
   virtual bool consume(RobotState& msg) override
   {
+    (void) msg;
     return true;
   }
 
