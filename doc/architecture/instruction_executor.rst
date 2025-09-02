@@ -1,3 +1,5 @@
+:github_url: https://github.com/UniversalRobots/Universal_Robots_Client_Library/blob/master/doc/architecture/instruction_executor.rst
+
 .. _instruction_executor:
 
 Instruction Executor
@@ -10,6 +12,8 @@ to point motions easily accessible. Currently, it supports the following instruc
 * Execute MoveL point to point motions
 * Execute MoveP point to point motions
 * Execute MoveC circular motions
+* Execute OptimoveJ point to point motions (For PolyScope 5.21 / PolyScope 10.8 and later)
+* Execute OptimoveL point to point motions (For PolyScope 5.21 / PolyScope 10.8 and later)
 * Execute sequences consisting of the motion primitives above
 
 The Instruction Executor uses the :ref:`trajectory_point_interface` and the
